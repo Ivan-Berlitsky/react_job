@@ -1,8 +1,9 @@
 import React from 'react';
+import 'normalize.css';
 import './App.css';
 import Header from './components/Header/Header';
-import Navbar from './components/Navbar/Navbar';
-import Profile from './components/Profile/Profile';
+import Navbar from './components/Navigation/Navigation';
+import Profile from './components/Content/Content';
 
 const App = () => {
   return (

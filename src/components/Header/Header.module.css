@@ -1,7 +1,76 @@
 .header {
     grid-area: h;
-    background-color: green;
+
+    background-color:var(--colorTheme);
+
+    padding: 0 1rem;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .5);
   }
-  .header img {
-    width: 20px;
+
+  .headerWrap{
+    max-width: 1800px;
+    height: 100%;
+
+    margin: 0 auto;
+    position: relative;
+
+    display: flex;
+    align-items: center;
   }
+
+  .logo{
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    width: 25rem;
+  }
+
+  .logo img {
+    width: 3rem;
+    
+  }
+
+  .logoName{ 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    text-shadow: 0 3px 5px rgba(255, 255, 255, 0.4);
+  }
+
+  .search{
+   
+  }
+
+  .searchField{
+    border: none;
+    background-color: #45546A;
+    color: white;
+    border-radius: 5px 0 0 5px;
+
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 15rem;
+    height: 2rem;
+    vertical-align: bottom;
+  }
+
+  .searchField:focus{
+    outline: none;
+    background-color: #3d4a5e;
+    
+  }
+
+  .buttonSearch{
+    background-color: #45546A;
+    border-radius: 0 5px 5px 0;
+
+    height: 32px;
+
+    vertical-align: bottom;
+
+    cursor: pointer;
+  }
+
