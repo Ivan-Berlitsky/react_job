@@ -5,3 +5,15 @@
 
     padding: 0 1rem;
   }
+
+  .navButton{
+    /* width: 100%; */
+    display: block;
+
+    cursor: pointer;
+  }
+
+  object ,object + .navMenu{
+    vertical-align: middle;
+    margin: 0 .5rem;
+  }
