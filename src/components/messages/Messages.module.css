@@ -1,0 +1,18 @@
+.messages {
+    grid-area: c;
+    background-color: var(--colorThem2);
+
+    display: flex;
+
+    max-width: 900px;
+  }
+
+  .friend, .blockMessages{
+    height: 100%;
+    width: 100%;
+    /* background-color: var(--colorTheme2); */
+  }
+
+  .blockMessages{
+    
+  }

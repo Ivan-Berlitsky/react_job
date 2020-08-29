@@ -13,7 +13,13 @@
     cursor: pointer;
   }
 
+  .navMenu{
+    color: var(--colorTheme);
+    text-decoration: none;
+  }
+
   object ,object + .navMenu{
     vertical-align: middle;
     margin: 0 .5rem;
   }
+
