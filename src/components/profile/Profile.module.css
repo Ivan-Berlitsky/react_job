@@ -2,7 +2,3 @@
   grid-area: c;
   background-color: var(--colorTheme2);
 }
-
-.imgContain img{
-  max-width: 900px;
-}

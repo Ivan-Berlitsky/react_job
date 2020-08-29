@@ -1,10 +1,9 @@
 .messages {
-    grid-area: c;
-    background-color: var(--colorThem2);
+    /* grid-area: c; */
+    /* background-color: var(--colorThem2); */
 
     display: flex;
 
-    max-width: 900px;
   }
 
   .friend, .blockMessages{

@@ -3,21 +3,6 @@
   --colorTheme2: #F0F2F7;
 }
 
-.app-wrapper {
-  margin: 0 auto;
-  height: 100vh;
-
-  display: grid;
-  grid-template-areas:
-  "h h"
-  "n c";
-
-  grid-template-rows: 60px 1fr;
-  grid-template-columns: 2fr 10fr;
-  grid-gap: 2rem;
-
-  background-color: var(--colorTheme2);
-}
 button{
   background-color: inherit;
   border: none;
@@ -33,3 +18,22 @@ img {
   max-width: 100%;
 }
 
+.app-wrapper {
+  margin: 0 auto;
+  height: 100vh;
+
+  display: grid;
+  grid-template-areas:
+  "h h"
+  "n c";
+
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 2rem;
+
+  background-color: var(--colorTheme2);
+}
+
+.content{
+  max-width: 900px;
+}
