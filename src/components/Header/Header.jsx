@@ -1,15 +1,18 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+
 import classes from './Header.module.css';
 import logo from './../../assets/images/logo.png';
 import search from './../../assets/images/search.ico';
+
 
 const Header = () => {
     return (
     <header className={classes.header}>
         <div className={classes.headerWrap}>
             <div className={classes.logo}>
-                <a href="#"><img src={logo} alt="logo"/></a>
-                <a href='#' className={classes.logoName}>Social network</a>
+                <NavLink to="/profile"><img src={logo} alt="logo"/></NavLink>
+                <NavLink to='/profile' className={classes.logoName}>Social network</NavLink>
             </div>
             <div className={classes.search}>
                 <form action="#" method='post'>
