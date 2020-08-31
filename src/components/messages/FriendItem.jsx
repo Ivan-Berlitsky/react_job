@@ -5,6 +5,7 @@ import Classes from './Friends.module.css'
 
 
 const FriendItem = (props) =>{
+    
     return(
         <NavLink to={'/messages/' + props.id} className={Classes.friendItem}>
             <img className={Classes.friendAvatar} src={props.src} alt="avatar"/>
