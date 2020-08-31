@@ -6,36 +6,18 @@
     height: 100%;
   }
 
-  .friends, .blockMessages{
-    height: 100%;
-    width: 100%;
+  .blockMessages{
+    flex-basis: 100%;
   }
 
-  .friends{
-    border-right: 1px solid red;
-    flex-basis: 50%;
-  }
 
   .blockMessages{
     /* text-align: center; */
     padding: 0 1rem;
   }
 
-  .friendItem, .messagesItem{
+   .messagesItem{
     margin: 1.5rem 0;
   }
 
-  .friendItem{
-    display: block;
-  }
-
-  .friendAvatar{
-    margin-right: 1rem;
-    width: 5rem;
-    height: 5rem;
-    object-fit: contain;
-
-    border-radius: 50%;
-
-    vertical-align: middle;
-  }
+  

@@ -1,0 +1,27 @@
+.friends{
+    flex-basis: 50%;
+
+    border-right: 1px solid red;   
+}
+
+.friendItem{
+    margin: 1.5rem 0;
+}
+
+.friendItem{
+    display: block;
+
+    color: var(--colorTheme);
+    text-decoration: none;
+  }
+
+  .friendAvatar{
+    margin-right: 1rem;
+    width: 5rem;
+    height: 5rem;
+    object-fit: contain;
+
+    border-radius: 50%;
+
+    vertical-align: middle;
+  }
