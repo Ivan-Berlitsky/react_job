@@ -18,9 +18,9 @@ const App = () => {
         <Header />
         <Navbar />
         <div className="content">
-          <Route path='/profile' component={Profile} />
+          <Route exact path='/profile' component={Profile} />
           <Route path='/messages' component={Messages} />
-          <Route path ='/news' component={News} />
+          <Route path='/news' component={News} />
         </div>
       </div>
     </BrowserRouter>
