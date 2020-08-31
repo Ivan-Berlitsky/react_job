@@ -3,11 +3,12 @@ import Post from './Posts/Post';
 import classes from './Profile.module.css';
 
 
+
 const Profile = () => {
   return (
     <div className={classes.content}>
       <div className={classes.imgContain}>
-        <img src='https://images.pexels.com/photos/248797/pexels-photo-248797.jpeg?auto=compress&cs=tinysrgb&h=350' alt="image"/>
+        <img src='https://lh3.googleusercontent.com/proxy/YwtJzp6XbQjAVVKhIDwkVwp2sQVy1kAhYTRa6rrFhimPAJEtkExZ46ERo2hTCnt3askdPVnsb1iyf6Qj_QWjRSCqZWxL3gl3W-Fm36WmyADX8us20kV3Sbtt1djfPjHSc57Tm-U1V4Mk9ubCY9Fy' alt="image"/>
       </div>
       <div>
         ava + description

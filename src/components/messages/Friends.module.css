@@ -1,7 +1,19 @@
 .friends{
     flex-basis: 50%;
+    position: relative;
+      
+}
 
-    border-right: 1px solid red;   
+.friends::after{
+  content: '';
+  display: block;
+
+  height: 96%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-right: 1px solid var(--colorTheme);
+  box-shadow: 20px 0 20px 0 var(--colorTheme); 
 }
 
 .friendItem{
