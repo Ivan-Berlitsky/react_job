@@ -6,12 +6,12 @@
     height: 100%;
   }
 
-  .friend, .blockMessages{
+  .friends, .blockMessages{
     height: 100%;
     width: 100%;
   }
 
-  .friend{
+  .friends{
     border-right: 1px solid red;
     flex-basis: 50%;
   }

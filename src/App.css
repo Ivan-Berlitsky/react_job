@@ -3,6 +3,10 @@
   --colorTheme2: #F0F2F7;
 }
 
+body{
+  background-color: var(--colorTheme2);
+}
+
 button{
   background-color: inherit;
   border: none;
