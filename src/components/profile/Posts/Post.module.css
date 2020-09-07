@@ -10,8 +10,9 @@
 }
 
 .postAvatar{
-    max-width: var(--avatarSize);
-    height: auto;
+    width: var(--avatarSize);
+    height: var(--avatarSize);
+    object-fit: cover;
     border-radius: 50%;
     margin-right: 1rem;
 }
@@ -55,6 +56,6 @@
     height: auto;
 }
 
-.likeScore{
+/* .likeScore{
     
-}
+} */

@@ -4,11 +4,11 @@ import classes from './Profile.module.css';
 
 
 
-const Profile = () => {
+const Profile = (props) => {
   return (
     <div className={classes.content}>
       <div className={classes.imgContain}>
-        <img src='https://lh3.googleusercontent.com/proxy/YwtJzp6XbQjAVVKhIDwkVwp2sQVy1kAhYTRa6rrFhimPAJEtkExZ46ERo2hTCnt3askdPVnsb1iyf6Qj_QWjRSCqZWxL3gl3W-Fm36WmyADX8us20kV3Sbtt1djfPjHSc57Tm-U1V4Mk9ubCY9Fy' alt="image"/>
+        <img src='https://i.pinimg.com/originals/ba/6c/d4/ba6cd45d22f01b59c1c4605c4e6dabab.jpg' alt="image"/>
       </div>
       <div>
         ava + description
@@ -16,8 +16,7 @@ const Profile = () => {
       <div>
         My posts
       </div>
-      <Post name='Евгения Берлицкая' score='23' text="loremLorem ipsum dolor sit amet consectetur adipisicing elit. Minus id ut tempora assumenda? Asperiores tenetur adipisci sed facere doloremque fuga tempore amet, commodi repellat? Repellat voluptate ducimus minima dolore. Aperiam." />
-      <Post name='Андрей Берлицкий' score='54' text="loremLorem ipsum dolor sit amet consectetur adipisicing elit. Minus id ut tempora assumenda? Asperiores tenetur adipisci sed facere doloremque fuga tempore amet, commodi repellat? Repellat voluptate ducimus minima dolore. Aperiam.loremLorem ipsum dolor sit amet consectetur adipisicing elit. Minus id ut tempora assumenda? Asperiores tenetur adipisci sed facere doloremque fuga tempore amet, commodi repellat? Repellat voluptate ducimus minima dolore. Aperiam.loremLorem ipsum dolor sit amet consectetur adipisicing elit. Minus id ut tempora assumenda? Asperiores tenetur adipisci sed facere doloremque fuga tempore amet, commodi repellat? Repellat voluptate ducimus minima dolore. Aperiam.loremLorem ipsum dolor sit amet consectetur adipisicing elit. Minus id ut tempora assumenda? Asperiores tenetur adipisci sed facere doloremque fuga tempore amet, commodi repellat? Repellat voluptate ducimus minima dolore. Aperiam.loremLorem ipsum dolor sit amet consectetur adipisicing elit. Minus id ut tempora assumenda? Asperiores tenetur adipisci sed facere doloremque fuga tempore amet, commodi repellat? Repellat voluptate ducimus minima dolore. Aperiam." />
+      <Post dataPosts={props.dataPosts} />
     </div>
     );  
 };

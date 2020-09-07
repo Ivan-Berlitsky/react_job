@@ -8,9 +8,9 @@ import Navbar from './components/navigation/Navigation';
 import Profile from './components/profile/Profile';
 import Messages from './components/messages/Messages';
 import News from './components/news/News';
-import arrMessages from './data/DataMessages';
-import arrFriends from './data/DataFriends';
-
+import dataMessages from './data/DataMessages';
+import dataFriends from './data/DataFriends';
+import dataPosts from './data/DataPosts'
 
 
 const App = () => {
@@ -20,8 +20,8 @@ const App = () => {
         <Header />
         <Navbar />
         <div className="content">
-          <Route exact path='/profile' render={Profile} />
-          <Route path='/messages' render={ () => <Messages arrFriends={arrFriends} arrMessages={arrMessages} /> } />
+          <Route exact path='/profile' render={() => <Profile dataPosts={dataPosts} />} />
+          <Route path='/messages' render={ () => <Messages dataFriends={dataFriends} dataMessages={dataMessages} /> } />
           <Route path='/news' render={(News)} />
         </div>
       </div>
