@@ -2,20 +2,18 @@ import React from 'react';
 
 import Classes from './Messages.module.css';
 import Classes2 from './Friends.module.css';
-import DataFriends from '../../data/DataFriends';
 import FriendsItem from './FriendsItem';
 import MessagesItem from './MessagesItem';
 
-const Messages = () => {
+const Messages = (props) => {
     return (
         <div className={Classes.messages}>
-            {console.log(DataFriends)}
             <div className={Classes2.friends}>
-                {FriendsItem}
+                <FriendsItem arrFriends={props.arrFriends}/>
             </div>
 
             <div className={Classes.blockMessages}>
-                {MessagesItem}
+                <MessagesItem arrMessages={props.arrMessages} />
             </div>
             
         </div>

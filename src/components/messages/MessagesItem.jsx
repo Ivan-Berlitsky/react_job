@@ -1,15 +1,18 @@
 import React from 'react';
 
 import Classes from './Messages.module.css';
-import array from '../../data/DataMessages';
 
+const MessagesItem = (props) => {
+    
+    const array = props.arrMessages.map( (element, index) => {
 
-const MessagesItem = array.map((element) => {
-    return (
-    <div className={Classes.messagesItem}>
-        {element.text}
-    </div>
-    );
-}) 
+        return(
+            <li className={Classes.messagesItem} key={index}>
+                    {element.text}
+            </li>
+        );
+    })
+return array;
+}
 
 export default MessagesItem;

@@ -8,6 +8,8 @@ import Navbar from './components/navigation/Navigation';
 import Profile from './components/profile/Profile';
 import Messages from './components/messages/Messages';
 import News from './components/news/News';
+import arrMessages from './data/DataMessages';
+import arrFriends from './data/DataFriends';
 
 
 
@@ -19,8 +21,8 @@ const App = () => {
         <Navbar />
         <div className="content">
           <Route exact path='/profile' component={Profile} />
-          <Route path='/messages' component={Messages} />
-          <Route path='/news' component={News} />
+          <Route path='/messages' render={ () => <Messages arrFriends={arrFriends} arrMessages={arrMessages} /> } />
+          <Route path='/news' render={(News)} />
         </div>
       </div>
     </BrowserRouter>
