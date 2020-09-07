@@ -1,8 +1,7 @@
 import React from 'react';
+
 import Post from './Posts/Post';
 import classes from './Profile.module.css';
-
-
 
 const Profile = (props) => {
   return (

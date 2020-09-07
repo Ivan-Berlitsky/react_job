@@ -7,7 +7,7 @@ const Post = (props) => {
     return(
         props.dataPosts.map( (element) => {
             return(
-                <li>
+                <li key={element.id}>
                     <div className={Classes.post}>
                         <div className={Classes.postAuthor}>
                             <img className={Classes.postAvatar} src={element.avatar} alt="avatar" />
