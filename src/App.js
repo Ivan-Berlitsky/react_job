@@ -20,7 +20,7 @@ const App = () => {
         <Header />
         <Navbar />
         <div className="content">
-          <Route exact path='/profile' component={Profile} />
+          <Route exact path='/profile' render={Profile} />
           <Route path='/messages' render={ () => <Messages arrFriends={arrFriends} arrMessages={arrMessages} /> } />
           <Route path='/news' render={(News)} />
         </div>
