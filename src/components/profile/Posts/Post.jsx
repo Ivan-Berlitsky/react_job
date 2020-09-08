@@ -3,9 +3,8 @@ import Classes from './Post.module.css'
 
 
 const Post = (props) => {
-
     return(
-        props.dataPosts.map( (element) => {
+        props.state.map( (element) => {
             return(
                 <li key={element.id}>
                     <div className={Classes.post}>

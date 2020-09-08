@@ -3,8 +3,7 @@ import React from 'react';
 import Classes from './Messages.module.css';
 
 const MessagesItem = (props) => {
-    
-    const array = props.dataMessages.map( (element, index) => {
+    const item = props.dataMessages.map( (element, index) => {
 
         return(
             <li className={Classes.messagesItem} key={index}>
@@ -12,7 +11,7 @@ const MessagesItem = (props) => {
             </li>
         );
     })
-return array;
+return item;
 }
 
 export default MessagesItem;

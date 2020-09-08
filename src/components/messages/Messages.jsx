@@ -9,11 +9,11 @@ const Messages = (props) => {
     return (
         <div className={Classes.messages}>
             <div className={Classes2.friends}>
-                <FriendsItem dataFriends={props.dataFriends}/>
+                <FriendsItem dataFriends={props.state.friends}/>
             </div>
 
             <div className={Classes.blockMessages}>
-                <MessagesItem dataMessages={props.dataMessages} />
+                <MessagesItem dataMessages={props.state.messages} />
             </div>
             
         </div>

@@ -6,7 +6,6 @@ import Classes from './Friends.module.css'
 const FriendsItem = (props) => {
 
         const item = props.dataFriends.map((element) => {
-
             return(
                 <li key={element.id}>
                     <NavLink to={'/messages/' + element.id} className={Classes.friendItem}>
