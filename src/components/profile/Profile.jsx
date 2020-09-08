@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Post from './Posts/Post';
+import PostAdd from './Posts/PostAdd';
 import classes from './Profile.module.css';
 
 const Profile = (props) => {
@@ -13,7 +14,7 @@ const Profile = (props) => {
         ava + description
       </div>
       <div>
-        My posts
+        <PostAdd />
       </div>
       <Post dataPosts={props.dataPosts} />
     </div>

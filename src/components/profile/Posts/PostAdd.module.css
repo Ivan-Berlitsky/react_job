@@ -1,0 +1,22 @@
+.form{
+    width: 100%;
+    position: relative;
+}
+
+.postAddField{
+    width: 80%;
+}
+
+.postAddButton{
+    cursor: pointer;
+
+    position: absolute;
+    right: 0;
+
+    padding: .2rem .5rem;
+    text-align: right;
+
+    background-color: var(--colorTheme);
+    color: var(--colorTheme2);
+    border-radius: 1rem;
+}
