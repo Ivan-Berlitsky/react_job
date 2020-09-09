@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Post from './Posts/Post';
-import PostAdd from './Posts/PostAdd';
+import Post from './posts/Post';
+import PostAdd from './posts/PostAdd';
 import classes from './Profile.module.css';
 
 const Profile = (props) => {

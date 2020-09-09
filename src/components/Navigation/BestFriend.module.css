@@ -1,0 +1,23 @@
+.bestFriends{
+    display: flex;
+    margin-top: 50%;
+    padding: 1.4rem;
+}
+
+.friendItem{
+    flex-basis: 33%;
+}
+
+.friendItemAvatar{
+    width: 5rem;
+    height: 5rem;
+    margin-left: calc(50% - 2.5rem);
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+.friendName{
+    text-align: center;
+}
