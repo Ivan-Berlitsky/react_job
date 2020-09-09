@@ -16,7 +16,10 @@ const Profile = (props) => {
       <div>
         <PostAdd />
       </div>
-      <Post state={props.state} />
+      <ul>
+        <Post state={props.state} />
+      </ul>
+      
     </div>
     );  
 };

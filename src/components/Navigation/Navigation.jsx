@@ -10,7 +10,6 @@ import Settings from './../../assets/images/settings.svg';
 import BestFriend from './BestFriend';
 
 const Navbar = (props) => {
-    console.log(props.state[0].src)
     return (
         <div className="navigation">
              <nav className={Classes.nav}>

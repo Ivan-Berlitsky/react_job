@@ -4,11 +4,13 @@ import Classes from './Messages.module.css';
 
 const MessagesItem = (props) => {
     const item = props.dataMessages.map( (element, index) => {
-
         return(
-            <li className={Classes.messagesItem} key={index}>
+
+                <li className={Classes.messagesItem} key={index}>
                     {element.text}
-            </li>
+                </li>
+
+            
         );
     })
 return item;
