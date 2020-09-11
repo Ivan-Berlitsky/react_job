@@ -14,10 +14,10 @@ const Profile = (props) => {
         ava + description
       </div>
       <div>
-        <PostAdd />
+        <PostAdd state={props.state}/>
       </div>
       <ul>
-        <Post state={props.state} />
+        <Post state={props.state.posts} />
       </ul>
       
     </div>

@@ -1,13 +1,21 @@
 import React from 'react';
 
-import Classes from './PostAdd.module.css'
+import classes from './PostAdd.module.css'
 
-const PostAdd = () => {
-    return (
-        <form className={Classes.form} action="#" method='post' name='addPost'>
-          <input className={Classes.postAddField} type="text" name="addPost" id="addPost"/>
-          <button className={Classes.postAddButton} type="submit">Отправить</button>
-        </form>
+const PostAdd = (props) => {
+
+    const postInput = React.createRef();
+    let addPost = () =>{
+      let postInputValue = postInput.current.value;
+      // alert(postInputValue)
+      console.log(props.state);
+      props.state.postAdd(postInputValue)
+    }
+  return (
+       <div className={classes.postAdd}>
+         <input className={classes.postAddField} type="text" ref={postInput}/>
+          <button className={classes.postAddButton} onClick={addPost}>Отправить</button>
+       </div>    
     );
 }
 
