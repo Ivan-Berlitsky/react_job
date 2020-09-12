@@ -1,3 +1,5 @@
+import rendering from '../rendering';
+
 let state = {
     stateProfile: {
         posts: [
@@ -22,11 +24,9 @@ let state = {
                 avatar: 'https://www.meme-arsenal.com/memes/0b37d82bcfd11cb3196fa5329f3bff0f.jpg',
                 name: 'Инкогнито',
                 score: 0,
-                text: txt
-
+                text: txt,
             });
-            console.log(this)
-            // alert();
+            rendering(state);
         }
     },
 
