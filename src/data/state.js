@@ -16,6 +16,14 @@ let state = {
              text: 'loremLorem ipsum dolor sit amet consectetur adipisicing elit. Minus id ut tempora assumenda? Asperiores tenetur adipisci sed facere doloremque fuga tempore amet, commodi repellat? Repellat voluptate ducimus minima dolore. Aperiam.loremLorem ipsum dolor sit amet consectetur adipisicing elit. Minus id ut tempora assumenda? Asperiores tenetur adipisci sed facere doloremque fuga tempore amet, commodi repellat? Repellat voluptate ducimus minima dolore. Aperiam.loremLorem ipsum dolor sit amet consectetur adipisicing elit. Minus id ut tempora assumenda? Asperiores tenetur adipisci sed facere doloremque fuga tempore amet, commodi repellat? Repellat voluptate ducimus minima dolore. Aperiam.loremLorem ipsum dolor sit amet consectetur adipisicing elit. Minus id ut tempora assumenda? Asperiores tenetur adipisci sed facere doloremque fuga tempore amet, commodi repellat? Repellat voluptate ducimus minima dolore. Aperiam.loremLorem ipsum dolor sit amet consectetur adipisicing elit. Minus id ut tempora assumenda? Asperiores tenetur adipisci sed facere doloremque fuga tempore amet, commodi repellat? Repellat voluptate ducimus minima dolore. Aperiam.'           
             }
         ],
+
+        postInputText: '',
+        postInput:(txt) => {
+        state.stateProfile.postInputText = txt;
+            rendering(state)
+        },
+        
+
         postAdd: (txt) => { 
             let posts = state.stateProfile.posts;
 
@@ -27,6 +35,7 @@ let state = {
                 text: txt,
             });
             rendering(state);
+            state.stateProfile.postInputText = '';
         }
     },
 
