@@ -10,14 +10,17 @@ import Messages from './components/messages/Messages';
 import News from './components/news/News';
 
 const App = (props) => {
+  let state = props.state.getState();
+  console.log(state)
+  
   return (
     <BrowserRouter>
       <div className='app-wrapper'>
         <Header />
-        <Navbar state={props.state.stateMessages.friends} />
+        <Navbar state={state.stateMessages.friends} />
         <div className="content">
-          <Route path='/profile' render={() => <Profile state={props.state.stateProfile} />} />
-          <Route path='/messages' render={ () => <Messages  state={props.state.stateMessages} /> } />
+          <Route path='/profile' render={() => <Profile state={props} />} />
+          <Route path='/messages' render={ () => <Messages  state={state.stateMessages} /> } />
           <Route path='/news' render={(News)} />
         </div>
       </div>

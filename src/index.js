@@ -1,6 +1,16 @@
-import state from './data/state';
 import * as serviceWorker from './serviceWorker';
-import rendering from './rendering';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import {store} from './data/store';
 
-rendering(state);
+
+    let render = (store) =>{
+    ReactDOM.render(<App state={store}/>, document.getElementById('root'));
+}
+render(store);
+
+store.subscribe(render);
+
 serviceWorker.unregister();
