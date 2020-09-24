@@ -8,18 +8,13 @@ const PostAdd = (props) => {
   const postInput = React.createRef();
 
     const addPost = () =>{
-      const postAdd = props.store.dispatch.bind(props.store);
-      postAdd({
-        type: 'POSTADD',
-      });
+      const dispatch = props.store.dispatch.bind(props.store);
+      dispatch(addPostActionCreator());
     }
 
     const postAddText = () => { 
-      const textAdd = props.store.dispatch.bind(props.store);
-      textAdd({
-        type: 'POSTINPUT',
-        text: postInput.current.value
-      });
+      const dispatch = props.store.dispatch.bind(props.store);
+      dispatch(postAddTextActionCreator(postInput));
     }
 
   return (
@@ -28,6 +23,18 @@ const PostAdd = (props) => {
           <button className={classes.postAddButton} onClick={addPost}>Отправить</button>
        </div>    
   );
+}
+
+const addPostActionCreator = () => {
+  return {
+    type: 'POSTADD'
+  }
+}
+const postAddTextActionCreator = (input) => {
+  return {
+    type: 'POSTINPUT',
+    text: input.current.value
+  }
 }
 
 export default PostAdd;
