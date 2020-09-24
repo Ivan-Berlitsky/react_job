@@ -1,3 +1,6 @@
+const POSTADD = 'POSTADD';
+const POSTINPUT = 'POSTINPUT'
+
 export let store = {
     _state: {
         stateProfile: {
@@ -98,3 +101,16 @@ export let store = {
             this._state.stateProfile.postInputText = '';
     },
 }
+
+export const addPostActionCreator = () => {
+    return {
+      type: POSTADD
+    }
+  }
+export const postAddTextActionCreator = (input) => {
+    return {
+      type: POSTINPUT,
+      text: input.current.value
+    }
+  }
+  

@@ -1,4 +1,5 @@
 import React from 'react';
+import { addPostActionCreator, postAddTextActionCreator } from '../../../data/store';
 
 import classes from './PostAdd.module.css'
 
@@ -25,16 +26,6 @@ const PostAdd = (props) => {
   );
 }
 
-const addPostActionCreator = () => {
-  return {
-    type: 'POSTADD'
-  }
-}
-const postAddTextActionCreator = (input) => {
-  return {
-    type: 'POSTINPUT',
-    text: input.current.value
-  }
-}
+
 
 export default PostAdd;
