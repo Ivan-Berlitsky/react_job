@@ -10,9 +10,9 @@ import Messages from './components/messages/Messages';
 import News from './components/news/News';
 
 const App = (props) => {
-  let state = props.state.getState();
-  console.log(state)
-  
+  console.log(props)
+  const state = props.state.getState();
+  window.state = state;
   return (
     <BrowserRouter>
       <div className='app-wrapper'>
@@ -27,5 +27,6 @@ const App = (props) => {
     </BrowserRouter>
     );
 }
+
 
 export default App;

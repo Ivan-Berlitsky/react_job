@@ -5,7 +5,6 @@ import './index.css';
 import App from './App';
 import {store} from './data/store';
 
-
     let render = (store) =>{
     ReactDOM.render(<App state={store}/>, document.getElementById('root'));
 }

@@ -69,12 +69,12 @@ export let store = {
 
     postInput(txt) {
         this._state.stateProfile.postInputText = txt;
-        this._subscribe()
+        this._subscribe(this)
         },
 
     postAdd(txt) { 
             let posts = this._state.stateProfile.posts;
-
+        
             posts.push({
                 id: posts.length + 1,
                 avatar: 'https://www.meme-arsenal.com/memes/0b37d82bcfd11cb3196fa5329f3bff0f.jpg',
@@ -82,7 +82,7 @@ export let store = {
                 score: 0,
                 text: txt,
             });
-            this._subscribe(this._state);
+            this._subscribe(this);
             this._state.stateProfile.postInputText = '';
     },
 }
