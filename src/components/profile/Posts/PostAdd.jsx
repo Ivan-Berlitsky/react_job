@@ -8,13 +8,18 @@ const PostAdd = (props) => {
   const postInput = React.createRef();
 
     const addPost = () =>{
-      let postInputValue = postInput.current.value;
-      props.store.postAdd(postInputValue)
+      const postAdd = props.store.dispatch.bind(props.store);
+      postAdd({
+        type: 'POSTADD',
+      });
     }
 
     const postAddText = () => { 
-      const postInputBind = props.store.postInput.bind(props.store);
-      postInputBind(postInput.current.value);
+      const textAdd = props.store.dispatch.bind(props.store);
+      textAdd({
+        type: 'POSTINPUT',
+        text: postInput.current.value
+      });
     }
 
   return (

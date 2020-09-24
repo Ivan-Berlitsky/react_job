@@ -10,7 +10,6 @@ import Messages from './components/messages/Messages';
 import News from './components/news/News';
 
 const App = (props) => {
-  console.log(props)
   const state = props.state.getState();
   window.state = state;
   return (

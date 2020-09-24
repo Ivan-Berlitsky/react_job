@@ -67,12 +67,13 @@ export let store = {
         this._subscribe = observer;
     },
 
-    postInput(txt) {
-        this._state.stateProfile.postInputText = txt;
-        this._subscribe(this)
-        },
 
-    postAdd(txt) { 
+    dispatch(action) {
+        if(action.type === 'POSTINPUT'){
+            this._state.stateProfile.postInputText = action.text;
+            this._subscribe(this)
+        }
+        else if(action.type === 'POSTADD'){
             let posts = this._state.stateProfile.posts;
         
             posts.push({
@@ -80,9 +81,10 @@ export let store = {
                 avatar: 'https://www.meme-arsenal.com/memes/0b37d82bcfd11cb3196fa5329f3bff0f.jpg',
                 name: 'Инкогнито',
                 score: 0,
-                text: txt,
+                text: this._state.stateProfile.postInputText
             });
             this._subscribe(this);
             this._state.stateProfile.postInputText = '';
-    },
+        }
+    }
 }
