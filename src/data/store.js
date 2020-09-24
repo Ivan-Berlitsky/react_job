@@ -67,13 +67,24 @@ export let store = {
         this._subscribe = observer;
     },
 
-
     dispatch(action) {
-        if(action.type === 'POSTINPUT'){
-            this._state.stateProfile.postInputText = action.text;
-            this._subscribe(this)
+        switch (action.type){
+            case 'POSTINPUT': this.postInput(action.text);
+            break;
+            case 'POSTADD': this.postAdd();
+            break;
+
+            default: alert(`type: ${action.type} - not found`);
         }
-        else if(action.type === 'POSTADD'){
+    },
+
+
+    postInput(txt) {
+        this._state.stateProfile.postInputText = txt;
+        this._subscribe(this)
+        },
+
+    postAdd() { 
             let posts = this._state.stateProfile.posts;
         
             posts.push({
@@ -82,9 +93,8 @@ export let store = {
                 name: 'Инкогнито',
                 score: 0,
                 text: this._state.stateProfile.postInputText
-            });
+            })
             this._subscribe(this);
             this._state.stateProfile.postInputText = '';
-        }
-    }
+    },
 }
